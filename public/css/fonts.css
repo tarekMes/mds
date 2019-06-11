@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Light';
+    src: url('../fonts/OpenSans-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url('../fonts/OpenSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'semiBold';
+    src: url('../fonts/OpenSans-Semibold.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'Bold';
+    src: url('../fonts/OpenSans-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'extraBold';
+    src: url('../fonts/OpenSans-Extrabold.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'helvBlack';
+    src: url('../fonts/HelveticaNeueCondensedBlack.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'helvLightItalic';
+    src: url('../fonts/HelveticaNeueLightItalic.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'helvRegularItalic';
+    src: url('../fonts/HelveticaNeueItalic.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
