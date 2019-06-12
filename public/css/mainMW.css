@@ -153,15 +153,18 @@
 
     .scroller {
         position: absolute;
-        width: 25px;
+        max-width: 35px;
         left: 0;
         right: 0;
         margin-left: auto;
         margin-right: auto;
-        bottom: 5px;
+        bottom: 35px;
         z-index: 1;
     }
 
+    .scroller img {
+        width: 35px
+    }
 
     /* ---------------------------- */
 
