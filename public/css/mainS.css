@@ -28,16 +28,18 @@
     }
 
     header h1 {
-        font-size: 36px;
+        font-size: 30px;
         font-family: Bold;
         color: white;
         text-align: center;
         text-align: left;
-        line-height: 60px;
+        line-height: 30px;
         text-transform: uppercase;
+        margin-top: 15px;
     }
 
     .headerTitle img:first-child {
+        width: 120px;
         box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.1);
         filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=6, Color='#000000');
     }
@@ -130,7 +132,7 @@
 
     .headerTitle {
         position: absolute;
-        bottom: 200px;
+        bottom: 150px;
         width: 80%;
         margin-left: auto;
         margin-right: auto;
@@ -150,6 +152,9 @@
         z-index: 1;
     }
 
+    .scroller img {
+        width: 45px;
+    }
 
     /* ---------------------------- */
 
@@ -822,7 +827,7 @@
         color: #333333
     }
 
-    /* 
+    /*
 
 -*---------------------animation */
 
