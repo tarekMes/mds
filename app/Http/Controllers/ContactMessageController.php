@@ -14,8 +14,8 @@ class ContactMessageController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'email' => 'required',
-            'name' => 'required|email',
+            'name' => 'required',
+            'email' => 'required|email',
             'subject' => 'required'
         ]);
 
