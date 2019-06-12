@@ -63,9 +63,12 @@ var app = new Vue({
             this.shownNav = false;
         },
         editMode(mode) {
-            this.mode = mode
+            this.mode = mode;
+        },
+        editNAv() {
+            this.scrollingnav = true;
+            this.shownNav = false;
         }
-
 
 
     },

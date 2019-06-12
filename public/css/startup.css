@@ -12,3 +12,10 @@ body {
     margin: 0;
     padding: 0;
 }
+
+small {
+    display: block;
+    font-size: 14px;
+    font-family: Bold;
+    color: #d4145a;
+}

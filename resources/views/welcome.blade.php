@@ -4,13 +4,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+    <meta name="description" content="Freelance Illustrator And Motion Graphics Artist">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript,Branding,Logo,Motion Design,Illutrator,Vector Art,FrontEND,Adobe ">
+    <meta name="author" content="Meslameni">
+        <title>MDS - Mes</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+
 
         <!-- Styles -->
- <link rel="stylesheet" type="text/css" href="{{'css/mainLG.css'}}">
+    <link rel="stylesheet" type="text/css" href="{{'css/mainLG.css'}}">
     <link rel="stylesheet" type="text/css" href="{{'css/main.css'}}">
     <link rel="stylesheet" type="text/css" href="{{'css/mainS.css'}}">
     <link rel="stylesheet" type="text/css" href="{{'css/mainM.css'}}">
@@ -81,9 +84,9 @@
                 <div class="shownNAv" v-if="shownNav">
                     <img src="{{'assessts/close.png'}}" alt="" class="close" @click="closenav()">
                     <ul>
-                        <li><a href="#aPropos">A Propos</a></li>
-                        <li><a href="#mainServices">Services</a></li>
-                        <li><a href="#footer">CONTACTEZ NOUS</a></li>
+                        <li><a href="#aPropos" @click="editNAv()">A Propos</a></li>
+                        <li><a href="#mainServices"  @click="editNAv()">Services</a></li>
+                        <li><a href="#footer"  @click="editNAv()">CONTACTEZ NOUS</a></li>
                     </ul>
                     <div class="toolnav">
                         <div class="social">
@@ -313,10 +316,26 @@
 
                     <!-- -------------contactForm-------------- -->
                     <div class="contactForm">
-                        <input type="text" placeholder="Full name">
-                        <input type="email" placeholder="Email">
-                        <textarea name="" id="" cols="30" rows="70" placeholder="Subject"></textarea>
-                        <button>SEND</button>
+                        @if (Session::has('flash_message'))
+                        <small>{{Session::get('flash_message')}}</small>
+                        @endif
+                        <form action="{{route('welcome')}}" method="POST">
+                                                    {{csrf_field()}}
+
+                        <input type="text" placeholder="Full name" id="name" name="name">
+                        @if ($errors->has('name'))
+                        <small>{{$errors->first('name')}}</small>
+                        @endif
+                        <input type="email" placeholder="Email" id="email" name="email">
+                        @if ($errors->has('email'))
+                        <small>{{$errors->first('email')}}</small>
+                        @endif
+                        <textarea cols="30" rows="70" placeholder="Subject" id="subject" name="subject"></textarea>
+                        @if ($errors->has('subject'))
+                        <small>{{$errors->first('subject')}}</small>
+                        @endif
+                        <button type="submit">SEND</button>
+                            </form>
                     </div>
                 </div>
                 <div class="follow">

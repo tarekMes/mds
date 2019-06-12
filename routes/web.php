@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post(
+    '/',
+    [
+        'uses' => 'ContactMessageController@store',
+        'as' => 'welcome'
+    ]
+);
