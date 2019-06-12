@@ -19,3 +19,39 @@ small {
     font-family: Bold;
     color: #d4145a;
 }
+
+.mainApp {
+    display: none;
+
+}
+
+.loaderApp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+@keyframes inout {
+    from {
+        transform: translateY(-10px)
+    }
+
+    to {
+        transform: translateY(10px)
+    }
+}
+
+.loaderApp img {
+    max-width: 50%;
+    animation: inout 1s alternate infinite ease-in-out;
+}
+
+.loaderApp p {
+    color: #fff;
+    position: absolute;
+    bottom: 30px;
+    right: auto;
+    left: auto;
+}

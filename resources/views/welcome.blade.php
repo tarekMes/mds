@@ -24,7 +24,12 @@
 
     </head>
   <body>
-    <div id="app">
+       <div class="loaderApp">
+        <img src="{{'assessts/logoHero.jpg'}}" alt="meslameni-com-logo">
+        <p>Meslameni</p>
+    </div>
+    <div id="app" class="mainApp">
+
         <header>
 
             <div id="headerContainer" class="headerContainer">
@@ -358,5 +363,11 @@
     <!-- ---------------javascript-------------------------------- -->
     <script src="{{'js/vue.min.js'}}" type="text/javascript"></script>
     <script src="{{'js/main.js'}}" type="text/javascript"></script>
+     <script>
+        window.addEventListener("load", function () {
+            console.log('loaded');
+            document.querySelector('.mainApp').style.display = 'block';
+            document.querySelector('.loaderApp').style.display = 'none';
+        }, false);</script>
 </body>
 </html>

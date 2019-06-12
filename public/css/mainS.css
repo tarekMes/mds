@@ -466,7 +466,7 @@
 
     .msLeft li {
         display: inline-block;
-        font-family: Open Sans;
+        font-family: Regular;
         font-size: 20px;
         text-transform: uppercase;
         color: #666666;
@@ -485,7 +485,7 @@
     }
 
     .msDecs h2 {
-        font-family: Open Sans;
+        font-family: Regular;
         font-weight: bold;
         font-size: 28px;
         text-transform: uppercase;
@@ -494,7 +494,7 @@
     }
 
     .msDecs p {
-        font-family: Open Sans;
+        font-family: Regular;
         font-size: 20px;
         line-height: 42px;
         color: #999999;
@@ -639,14 +639,14 @@
     }
 
     .cicTitle h2 {
-        font-family: Open Sans;
+        font-family: Regular;
         font-size: 24px;
         color: #ed1e79;
         margin-right: 50px
     }
 
     .cicDesc p {
-        font-family: Open Sans;
+        font-family: Regular;
         font-size: 20px;
         color: #FFFFFF;
 
@@ -671,7 +671,7 @@
 
     input::placeholder,
     textarea::placeholder {
-        font-family: Open Sans;
+        font-family: Regular;
         font-size: 24px;
         color: #E6E6E6;
 
