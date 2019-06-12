@@ -35,21 +35,22 @@ small {
 
 @keyframes inout {
     from {
-        transform: translateY(-10px)
+        transform: translateY(-10px) scale(.7)
     }
 
     to {
-        transform: translateY(10px)
+        transform: translateY(20px) scale(1)
     }
 }
 
 .loaderApp img {
     max-width: 50%;
-    animation: inout 1s alternate infinite ease-in-out;
+    animation: inout 1.4s alternate infinite ease;
 }
 
 .loaderApp p {
-    color: #fff;
+    font-family: Regular;
+    color: #d4145a;
     position: absolute;
     bottom: 30px;
     right: auto;

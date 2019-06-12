@@ -25,8 +25,8 @@
     </head>
   <body>
        <div class="loaderApp">
-        <img src="{{'assessts/logoHero.jpg'}}" alt="meslameni-com-logo">
-        <p>Meslameni</p>
+        <img src="{{'assessts/LogoLoader.svg'}}" alt="meslameni-com-logo">
+        <p>Meslameni Delivery Services</p>
     </div>
     <div id="app" class="mainApp">
 
@@ -366,8 +366,10 @@
      <script>
         window.addEventListener("load", function () {
             console.log('loaded');
-            document.querySelector('.mainApp').style.display = 'block';
+            setTimeout(function(){ document.querySelector('.mainApp').style.display = 'block';
             document.querySelector('.loaderApp').style.display = 'none';
+        }, 3000);
+
         }, false);</script>
 </body>
 </html>
