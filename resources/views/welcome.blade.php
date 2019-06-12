@@ -54,8 +54,8 @@
                 <div class="headerTitle">
                     <img src="{{'assessts/logoHero.jpg'}}" alt="">
 
-                    <h1>Livraison à vos portes ,</h1>
-                    <h1>Livraison à tous moyens confortes.</h1>
+                    <h1>c&#39;est bien plus qu’un</h1>
+                    <h1>service logistique.</h1>
                 </div>
                 <div class="scroller">
                     <img src="{{'assessts/scroller.png'}}" alt="">
